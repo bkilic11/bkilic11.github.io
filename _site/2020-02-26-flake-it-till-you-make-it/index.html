@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>Git / Github</title>
+
+  
+  <meta name="author" content="Barış Kılıç">
+  
+
+  <meta name="description" content="Git Kurulumu ve Git komutları">
+
+  
+
+  
+
+  
+  <link rel="alternate" type="application/rss+xml" title="Home" href="http://localhost:4000/feed.xml">
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="Home">
+  <meta property="og:title" content="Git / Github">
+  <meta property="og:description" content="Git Kurulumu ve Git komutları">
+
+  
+  <meta property="og:image" content="http://localhost:4000/assets/img/git.png">
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Barış Kılıç">
+  <meta property="og:article:published_time" content="2020-02-26T00:00:00-05:00">
+  <meta property="og:url" content="http://localhost:4000/2020-02-26-flake-it-till-you-make-it/">
+  <link rel="canonical" href="http://localhost:4000/2020-02-26-flake-it-till-you-make-it/">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:site" content="@b_kilic11">
+  <meta name="twitter:creator" content="@b_kilic11">
+
+  <meta property="twitter:title" content="Git / Github">
+  <meta property="twitter:description" content="Git Kurulumu ve Git komutları">
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/git.png">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">Home</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutme">About Me</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="http://localhost:4000/">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/avatar-icon.png" />
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "Markdown Nedir", \
+          "desc"     : "Markdown Nedir", \
+          "category" : "", \
+          "url"      : "/2023-08-21-markdown/", \
+          "date"     : "August 21, 2023" \
+        }, \
+       \
+        { \
+          "title"    : "Rails Blog Uygulaması", \
+          "desc"     : "Rails Blog Uygulaması", \
+          "category" : "", \
+          "url"      : "/2023-08-05-rails-blog/", \
+          "date"     : "August  5, 2023" \
+        }, \
+       \
+        { \
+          "title"    : "Ruby On Rails", \
+          "desc"     : "Ruby On Rails", \
+          "category" : "", \
+          "url"      : "/2020-02-28-sample-markdown/", \
+          "date"     : "February 28, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "Git / Github", \
+          "desc"     : "Git / Github", \
+          "category" : "", \
+          "url"      : "/2020-02-26-flake-it-till-you-make-it/", \
+          "date"     : "February 26, 2020" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "", \
+          "desc"     : "", \
+          "category" : "page", \
+          "url"      : "/aboutme/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Dökümanlarım", \
+          "desc"     : "Dökümanlarım", \
+          "category" : "page", \
+          "url"      : "/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Tag Index", \
+          "desc"     : "Tag Index", \
+          "category" : "page", \
+          "url"      : "/tags/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
+
+
+
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+  <div id="header-big-imgs" data-num-img=1
+    
+    
+    
+      
+      data-img-src-1="http://localhost:4000/assets/img/git.png"
+    
+    
+    
+  ></div>
+
+
+<header class="header-section has-img">
+
+<div class="big-img intro-header">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="post-heading">
+          <h1>Git / Github</h1>
+          
+            
+              <h2 class="post-subheading">Git Kurulumu ve Git komutları</h2>
+            
+          
+
+          
+            <span class="post-meta">Posted on February 26, 2020</span>
+            
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class='img-desc'></span>
+</div>
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="post-heading">
+          <h1>Git / Github</h1>
+          
+            
+              <h2 class="post-subheading">Git Kurulumu ve Git komutları</h2>
+            
+          
+
+          
+            <span class="post-meta">Posted on February 26, 2020</span>
+            
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</header>
+
+
+
+
+<div class=" container-md ">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+
+      
+
+      
+
+      <article role="main" class="blog-post">
+        <p>Git, projenin geçmişindeki değişiklikleri izlemek <br />
+ve birden fazla geliştiricinin aynı proje içerisinde çalışmasını sağlamak <br />
+için kullanılan versiyon kontrol sistemidir.</p>
+
+<h3 id="git-terminal-ile-yapılandırılması">Git Terminal ile Yapılandırılması</h3>
+
+<p>Sırada ise Git’i yapılandırcağız. Github hesabımızla eşlenecek.<br />
+Eğer Github hesabınız yok ise hesap açmak için <a href="https://github.com/">buradan</a> ulaşabilirsiniz.<br />
+Aşağıda görmüş olduğunuz adınızı ve e-posta adresinizi kendi Github bilgilerinize göre değiştirin.<br />
+<code class="language-plaintext highlighter-rouge">git config --global color.ui true </code><br />
+<code class="language-plaintext highlighter-rouge">git config --global user.name "YOUR NAME" </code><br />
+<code class="language-plaintext highlighter-rouge">git config --global user.email "YOUR@EMAİL.com" </code><br />
+<code class="language-plaintext highlighter-rouge">ssh-keygen -t ed25519 -C "YOUR@EMAİL.com" </code></p>
+
+<p>Bir sonraki adım olarak aşağıdaki komutun çıktısını kopyalayın ve buradaki <a href="https://github.com/settings/ssh">https://github.com/settings/ssh</a> linke giderek new SHH key yerine yapıştırın.  <br />
+<code class="language-plaintext highlighter-rouge">cat ~/.ssh/id_ed25519.pub</code>           <br />
+Herşeyi yaptıktan sonra işe yaradığını anlamanız için aşağıdaki komutu yazın.  <br />
+<code class="language-plaintext highlighter-rouge">ssh -T git@github.com</code>  <br />
+Bunu yazdıktan sonra böyle bir mesaj alıyorsan herşeyi doğru yapmışsındır.<br />
+ <strong>Hi excid3!</strong> You’ve successfully authenticated, but GitHub does not provide shell access.</p>
+
+<h3 id="git-komutları">Git Komutları</h3>
+
+<p>Bir klasör oluşturup içerisinde<br />
+<code class="language-plaintext highlighter-rouge">git init</code><br />
+fonksiyonu çalıştırdığımızda .git altında dosya yönetim sistemi oluşturur. <br />
+Bu komutu yazmadan git komutlarını dosyanızda kullanamazsınız.</p>
+
+<p>a.txt ve b.txt dosyaları üstünde çalıştınız ve bu dosyaların durumunu görmek için<br />
+kullanacağınız komut ise<br />
+<code class="language-plaintext highlighter-rouge">git status</code><br />
+komutudur.</p>
+
+<p>a.txt, b.txt dosyalarını staging alana göndermek için ise<br />
+<code class="language-plaintext highlighter-rouge">git add</code><br />
+komutunu kullanabiliriz.</p>
+
+<p>Staging alanında olan dosyanızı çıkarmak için<br />
+<code class="language-plaintext highlighter-rouge">git reset HEAD "filename"</code><br />
+komutunu kullanabilirsiniz.</p>
+
+<p>Aşağıdaki komutu kullanarak dosyalarınızı Local Reponuza kaydedebilirsiniz <br />
+<code class="language-plaintext highlighter-rouge">git commit -m "msg"</code></p>
+
+<p>Tarayıcıdaki deponuza göndermek için ise<br />
+<code class="language-plaintext highlighter-rouge">git push origin master</code><br />
+komutunu kullanabilirsiniz.</p>
+
+<p>Önceki yaptığımız commit mesajlarının içeriğini ve tarihçesini görmek için ise<br />
+<code class="language-plaintext highlighter-rouge">git log </code><br />
+komutunu kullanabilirsiniz.</p>
+
+<p>Hangi branchde çalıştığınızı görmek için<br />
+<code class="language-plaintext highlighter-rouge">git branch</code><br />
+komutunu kullanabilirsiniz.</p>
+
+<p><code class="language-plaintext highlighter-rouge">git stash</code><br />
+değişiklikleri commit’lemeden yerel depoya kaydetmeyi sağlayan bir araçtır.</p>
+
+<p><code class="language-plaintext highlighter-rouge">git diff</code><br />
+komutu dosyada hangi alanların değiştiğini görmek için kullanılır.</p>
+
+<p><code class="language-plaintext highlighter-rouge">git checkout -dosyaadi</code><br />
+komutu ile değişikliği geriye alabilirsiniz.</p>
+
+<p><code class="language-plaintext highlighter-rouge">git  shows</code><br />
+komutu ile commit içersinde yapılan değişiklikleri görebilirsiniz.</p>
+
+<p><code class="language-plaintext highlighter-rouge">git merge</code><br />
+komutu ile başka bir branch’deki değişiklikleri kendi çalıştığınız branch’inize entegre etmenize yarar.</p>
+
+<p><code class="language-plaintext highlighter-rouge">git pull</code><br />
+komutu ile ana proje dosyasındaki yaptığınız değişiklikleri bilgisayarınızdaki versiyona çekmeye yarar.</p>
+
+<p><code class="language-plaintext highlighter-rouge">git config</code><br />
+komutu ile bilgisayarınızdaki git terminalini kendi github hesabınıza bağlamaya yarar.  make it.</p>
+
+      </article>
+
+      
+
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+    <a href="https://twitter.com/intent/tweet?text=Git+%2F+Github&url=http%3A%2F%2Flocalhost%3A4000%2F2020-02-26-flake-it-till-you-make-it%2F"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020-02-26-flake-it-till-you-make-it%2F"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  
+
+  
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2020-02-26-flake-it-till-you-make-it%2F"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+  
+
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pagination blog-pager">
+        
+        
+        <li class="page-item next">
+          <a class="page-link" href="/2020-02-28-sample-markdown/" data-toggle="tooltip" data-placement="top" title="Ruby On Rails">Next Post &rarr;</a>
+        </li>
+        
+      </ul>
+      
+  
+  
+  
+
+  
+
+
+  
+
+  
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      
+<ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="mailto:baris.kilic@iwallet.com.tr" title="Email me">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email me</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://github.com/bkilic11" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://twitter.com/b_kilic11" title="Twitter">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Twitter</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://linkedin.com/in/barış-kılıc-435761169/" title="LinkedIn">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">LinkedIn</span>
+   </a>
+  </li></ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Barış Kılıç
+        &nbsp;&bull;&nbsp;
+      
+      2023
+
+      
+
+      
+
+      
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>

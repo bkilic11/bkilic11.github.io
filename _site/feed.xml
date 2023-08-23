@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    
+    <title>Home</title>
+    
+    
+    <description>This website is a virtual proof that I&apos;m awesome</description>
+    
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Markdown Nedir</title>
+        <description>
+          Markdown Kodları - 
+          Markdown hafif bir işaretleme dilidir ve metin belgelerini kolayca biçimlendirmek için kullanılır. Markdown, basit ve okunabilir bir sözdizimine sahiptir ve çeşitli platformlarda (web siteleri, not defterleri, belge düzenleyicileri vb.) kullanılabilir. sahiptir ve çeşitli platformlarda (web siteleri, not defterleri, belge düzenleyicileri vb.) kullanılabilir. Markdown büyükten küçüğe doğru # Başlık seviyesi 1...
+        </description>
+        <pubDate>Mon, 21 Aug 2023 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2023-08-21-markdown/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023-08-21-markdown/</guid>
+      </item>
+    
+      <item>
+        <title>Rails Blog Uygulaması</title>
+        <description>
+          Rails uygulması nasıl açılır ve uygulamada neler öğrendim - 
+          Burada Rails ile kendi yaptığım blog uygulamasını bulabilirsiniz. Örnek olarak bazı gemleri kullanarak blog uygulaması yaptım. Kendi github adresimde kodları bulabilirsiniz. Rails Uygulaması nasıl açılır Terminalizi açın cd Desktop yazın. Daha sonra aşağıdaki adımları takip ederek Rails projesi oluşturun. rails new myapp “veritabanı kullanmadan oluşturmak için” rails new myapp -d...
+        </description>
+        <pubDate>Sat, 05 Aug 2023 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2023-08-05-rails-blog/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023-08-05-rails-blog/</guid>
+      </item>
+    
+      <item>
+        <title>Ruby On Rails</title>
+        <description>
+          Ruby On Rails Kurulumu - 
+          Genellikle Rails olarak anılan Ruby on Rails (RoR), Ruby programlama dilinde yazılmış açık kaynaklı bir web uygulama çerçevesidir. Ortak görevleri basitleştiren bir dizi kural, en iyi uygulama ve önceden oluşturulmuş araçlar sağlayarak web geliştirmeyi daha hızlı ve daha kolay hale getirmek için tasarlanmıştır. Ruby On Rails Kurulum Ruby On Rails...
+        </description>
+        <pubDate>Fri, 28 Feb 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2020-02-28-sample-markdown/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-02-28-sample-markdown/</guid>
+      </item>
+    
+      <item>
+        <title>Git / Github</title>
+        <description>
+          Git Kurulumu ve Git komutları - 
+          Git, projenin geçmişindeki değişiklikleri izlemek ve birden fazla geliştiricinin aynı proje içerisinde çalışmasını sağlamak için kullanılan versiyon kontrol sistemidir. Git Terminal ile Yapılandırılması Sırada ise Git’i yapılandırcağız. Github hesabımızla eşlenecek. Eğer Github hesabınız yok ise hesap açmak için buradan ulaşabilirsiniz. Aşağıda görmüş olduğunuz adınızı ve e-posta adresinizi kendi Github bilgilerinize...
+        </description>
+        <pubDate>Wed, 26 Feb 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2020-02-26-flake-it-till-you-make-it/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-02-26-flake-it-till-you-make-it/</guid>
+      </item>
+    
+  </channel>
+</rss>
