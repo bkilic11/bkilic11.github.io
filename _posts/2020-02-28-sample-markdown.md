@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ruby On Rails
-cover-img: /assets/img/images.jpeg
+cover-img: /assets/img/rails3.png
 subtitle: Ruby On Rails Kurulumu
 --- 
 Genellikle Rails olarak anılan Ruby on Rails (RoR), Ruby programlama dilinde yazılmış açık kaynaklı bir web uygulama çerçevesidir. Ortak görevleri basitleştiren bir dizi kural, en iyi uygulama ve önceden oluşturulmuş araçlar sağlayarak web geliştirmeyi daha hızlı ve daha kolay hale getirmek için tasarlanmıştır.
