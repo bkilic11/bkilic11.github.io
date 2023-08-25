@@ -37,4 +37,4 @@ Rails blog uygulaması başlangıçta yapabilceniz uygulamalardan bir tanesidir.
 13. Dependent: :destroy sahibi yok edildiğinde ona ait olan herşeyi siler.
 
 ##### Blog Uygulamasını Görmek İçin  
-<https://github.com/bkilic11/Blog>
+<https://gitlab.com/barisklc/rails_blog_project>
