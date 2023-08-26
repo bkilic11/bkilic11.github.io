@@ -7,7 +7,7 @@ subtitle:
 
 **Merhaba ben Barış KILIÇ**
 
-- Html ve Css yazabiliyorum
+- Html, Css ve Boostrap yazabiliyorum
 - Javascript Yazabiliyorum
 - Ruby On Rails öğrenme sürecim devam ediyor
 - Markdown Yazabiliyorum
